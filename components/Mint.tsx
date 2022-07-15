@@ -9,8 +9,8 @@ export const Mint = () => {
   const signatureDrop = useSignatureDrop(myNFTDropAddress);
   const address = useAddress();
   return (
-    <div className='w-full h-screen'>
-      <div className='max-w-[1240px] w-full h-full mx-auto pt-20 flex flex-col justify-center items-center'>
+    <div className='w-full h-screen pt-20 ml-[55%] lg:ml-[0px]'>
+      <div className='max-w-[1240px] mx-auto h-full flex flex-col justify-center items-center p-4 '>
         <div className='flex flex-col justify-center items-center border-4 border-gray-800 p-4 rounded'>
           <div>
             <Image
@@ -47,7 +47,6 @@ export const Mint = () => {
               height={40}
               alt='opensea'
             />
-
           </div>
         </div>
       </div>

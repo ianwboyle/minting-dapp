@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Mint } from "../components/Mint";
 import { Navbar } from '../components/Navbar';
-import { Embed } from '../components/Embed';
 import { Team } from '../components/Team';
 
 
@@ -14,7 +13,6 @@ export const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <Embed />
       <Mint />
       <Team />
     </>
