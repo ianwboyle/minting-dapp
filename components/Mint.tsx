@@ -1,6 +1,5 @@
 import { useAddress, useMetamask, useSignatureDrop } from "@thirdweb-dev/react";
 import Image from "next/image";
-import { CrossmintPayButton } from "@crossmint/client-sdk-react-ui";
 
 const myNFTDropAddress = "0x7D887C5D774eA76F613Bc90bf04D47Df3005D85e"
 
@@ -28,18 +27,26 @@ export const Mint = () => {
               <button onClick={connectWithMetamask}>{"Proceed to Mint"}</button>
             )}
           </div>
-          <div className='p-4'>
-            <CrossmintPayButton
-              collectionTitle="<TITLE_FOR_YOUR_COLLECTION>"
-              collectionDescription="<DESCRIPTION_OF_YOUR_COLLECTION>"
-              collectionPhoto="<OPT_URL_TO_PHOTO_COVER>"
-              clientId="<YOUR_CLIENT_ID>"
-              environment="<YOUR_DESIRED_ENVIRONMENT>"
-              mintConfig={{
-                count: "<NUMBER_OF_NFTS>",
-                totalPrice: "<SELECTED_PRICE>"
-              }}
-            /> 
+          <div className='flex flex-row justify-center items-center p-8 gap-8'>
+            <Image
+              src="/assets/opensea.png"
+              width={50}
+              height={50}
+              alt='opensea'
+            />
+            <Image
+              src="/assets/rarible.png"
+              width={50}
+              height={50}
+              alt='opensea'
+            />
+            <Image
+              src="/assets/looksrare.png"
+              width={50}
+              height={40}
+              alt='opensea'
+            />
+
           </div>
         </div>
       </div>
