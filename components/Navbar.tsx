@@ -1,7 +1,6 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
 import navLogo from '../public/assets/Logo.png';
 
 const style = {
