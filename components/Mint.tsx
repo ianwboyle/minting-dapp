@@ -1,5 +1,6 @@
 import { useAddress, useMetamask, useSignatureDrop } from "@thirdweb-dev/react";
 import Image from "next/image";
+import LogoImg from '../public/assets/Logo.png';
 
 const myNFTDropAddress = "0x7D887C5D774eA76F613Bc90bf04D47Df3005D85e"
 
@@ -13,7 +14,7 @@ export const Mint = () => {
         <div className='flex flex-col justify-center items-center border-4 border-gray-800 p-4 rounded'>
           <div>
             <Image
-              src="/assets/logo.png"
+              src={LogoImg}
               width={400}
               height={400}
               className="mx-auto"
